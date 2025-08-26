@@ -1,11 +1,3 @@
-function l --description "List files with lsd in long format"
-    if command -q lsd
-        lsd -l $argv
-    else
-        ls -l $argv
-    end
-end
-
 function tree --description "Show directory tree with lsd"
     if command -q lsd
         lsd -la --tree --depth 1 $argv
